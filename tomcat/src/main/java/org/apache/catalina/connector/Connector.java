@@ -41,7 +41,7 @@ public class Connector implements Runnable {
     }
 
     // 참고: https://dev-ws.tistory.com/96
-    private static ThreadPoolExecutor createThreadPool(int maxThreads, int acceptCount) {
+    private ThreadPoolExecutor createThreadPool(int maxThreads, int acceptCount) {
         return new ThreadPoolExecutor(
                 maxThreads,
                 maxThreads,
